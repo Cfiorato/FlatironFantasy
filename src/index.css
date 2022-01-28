@@ -1,13 +1,213 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+
+::-webkit-scrollbar{
+  background: transparent;
+  width: .25vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #6082B6;
+  margin: 0px;
+  font-family: 'Sparton', sans-serif;
+}
+
+.Header {
+  background-color: whitesmoke;
+}
+
+.Header {
+  position: sticky;
+  min-height: 5vh;
+  top: 0;
+  display:flex;
+  margin: 0 auto;
+  padding: 15px;
+  padding-top: 8vh;
+  height: 7vh;
+  z-index: 9;
+  border-bottom: 2px solid black;
+}
+
+#logo {
+  position: fixed;
+  top: 3vh;
+  left: auto;
+  right: auto;
+  width: auto;
+  height: 12vh;
+  padding: 3px;
+}
+
+.Search{
+  position: relative;
+  padding-top: 1vh;
+}
+
+.searchBar {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+  width: 35vw;
+  height: 5vh;
+  box-sizing: border-box;
+  border: none;
+  border-color: whitesmoke;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.Search input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  text-align: left;
+  color: black;
+  font-size: medium;
+  font-family: 'Sparton' sans-serif;
+}
+
+.pageLinks button{
+  position: relative;
+  top: 0vh;
+  left: 65vw;
+  font-family: 'Sparton', sans-serif;
+  font-size: medium;
+  color: #212121; 
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  margin-right: 5vw;
+  margin-top: 1vh;
+}
+
+.pageLinks button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.Footer {
+  position: absolute;
+  text-align: center;
+  font-size: medium;
+  font-weight: 600;
+  margin-top: 20vh;
+  width: 100%;
+}
+
+.Database {
+  width: 100vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
+  padding: 5vh;
+}
+
+#Players {
+  margin: 0px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.Player {
+  background-color: whitesmoke;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr; 
+  padding: 20px;
+  width: 20vw;
+  height: 50vh
+}
+
+.Player img {
+  position: relative;
+  max-width: 16vw;
+  
+}
+
+.deleteBtn {
+  margin: auto;
+  width: 5vw;
+}
+
+.detailsBtn {
+  margin: auto;
+  width: 5vw;
+}
+
+.Home {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 10vh;
+  height: 60vh;
+  width: 75vw;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 2px black;
+  text-align: center;
+}
+
+.PlayerDetails {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10vh;
+  width: 50vw;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 2px black;
+  text-align: center;
+}
+
+.Warning {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10vh;
+  width: 50vw;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 2px black;
+  text-align: center;
+}
+
+#formContainer {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10vh;
+  width: 50vw;
+  line-height: 2;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 2px black;
+  text-align: center;
+  align-items: center;
+}
+
+#formContainer label{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  text-align: left;
+}
+
+#submit{
+  margin-right: 20vw;
+  margin-left: 20vw;
+  width: 10vw;
+  height: 2vw;
 }
