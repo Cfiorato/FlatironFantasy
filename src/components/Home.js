@@ -11,7 +11,7 @@ function Home (){
             <br/>
             <h3>🏈  Also feel free to add any player we don't have in our database using our form  🏈</h3>
             <br/>
-            <p>Scoring numbers are compiled using ESPN's Standard Points-Per-Reception format</p>
+            <p>* Scoring numbers are compiled using ESPN's Standard Points-Per-Reception format *</p>
         </div>
     );
 }

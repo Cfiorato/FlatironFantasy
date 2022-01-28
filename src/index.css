@@ -88,7 +88,7 @@ body{
 
 .pageLinks button:hover {
   cursor: pointer;
-  color: white;
+  background-color: #6082B6;
 }
 
 .Footer {
@@ -136,10 +136,16 @@ body{
   margin: auto;
   width: 5vw;
 }
+.deleteBtn:hover{
+  cursor: pointer;
+}
 
 .detailsBtn {
   margin: auto;
   width: 5vw;
+}
+.detailsBtn:hover{
+  cursor: pointer;
 }
 
 .Home {
@@ -210,4 +216,16 @@ body{
   margin-left: 20vw;
   width: 10vw;
   height: 2vw;
+}
+
+#submit:hover{
+  cursor: pointer;
+}
+
+.watchlistButton:hover{
+  cursor: pointer;
+}
+
+.Home p{
+  font-style: italic;
 }
