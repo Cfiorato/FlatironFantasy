@@ -11,18 +11,23 @@ function Create({ handleSubmit }) {
     const name = e.target.name
     const value = e.target.value
     setNewData(values => ({...values, [name]: value}))
+    
   }
 
   function submitHandler(e){
     e.preventDefault()
     handleSubmit(newData)
+    setNewData({
+      position: 'QB',
+      team_name: 'Arizona Cardinals'
+    })
   }
 
   return(
     <div id='formContainer' >
       <h2>Create a Player Below</h2>
       <br/>
-      <form onSubmit={(e) => submitHandler(e)}>
+      <form className='form' onSubmit={(e) => submitHandler(e)}>
         <label>Name
           <input
           type="text"
